@@ -1,6 +1,212 @@
+/* Import fonts */
+@font-face {
+    font-family: netflix-sans;
+    src: url(../fonts/netflix-sans/NetflixSans-Light.otf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: netflix-sans;
+    src: url(../fonts/netflix-sans/NetflixSans-Regular.otf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: netflix-sans;
+    src: url(../fonts/netflix-sans/NetflixSans-Medium.otf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: netflix-sans;
+    src: url(../fonts/netflix-sans/NetflixSans-Bold.otf);
+    /* font-weight: 900; */
+}
+
 /* General Changes START */
+* {
+    font-family: netflix-sans;
+}
+
 .container {
-    width: 1000px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: black;
+}
+
+section,
+footer {
+    border-top: 8px solid #2d2d2d;
+    border-bottom: 8px solid #2d2d2d;
+    color: white;
+    padding: 72px !important;
+}
+
+section h2 {
+    font-size: 3rem;
+    font-weight: 900;
 }
 
 /* General Changes END */
+
+/* FAQ sections START */
+
+#faq .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* faq h2 */
+#faq h2 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* accordion box START */
+.active {
+    max-height: 75rem !important;
+}
+
+.rotate {
+    transform: rotate(135deg);
+}
+
+/* whole box */
+#accordion-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+}
+
+/* each box */
+.accordion-item-box {
+    width: 80%;
+}
+
+/* headers */
+.accordion-header {
+    background-color: #2d2d2d;
+    padding: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .2s;
+    margin-bottom: 1px;
+    user-select: none;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.accordion-header:hover {
+    background-color: rgb(75, 73, 73);
+}
+
+.accordion-body {
+    background-color: #2d2d2d;
+    color: white;
+    max-height: 0;
+    transition: all 0.25s cubic-bezier(1, 0, 0.1, 1) 0s;
+    margin-bottom: 8px;
+    padding: 0;
+    overflow: hidden;
+    padding-inline: 1.5rem;
+
+}
+
+.accordion-body p {
+    font-weight: 300;
+    padding-block: 1.5rem;
+}
+
+.accordion-body a {
+    color: white;
+}
+
+/* accordion box END */
+
+/* email address */
+#email-address {
+    width: 600px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-weight: 300;
+}
+
+#email-input-box {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap: 5px;
+}
+
+#email-input-box input {
+    outline: none;
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: #000000;
+    padding: 15px;
+    width: 350px;
+    color: white;
+}
+
+#email-input-box button {
+    cursor: pointer;
+    border: none;
+    padding: 10px 15px;
+    background-color: red;
+    color: white;
+    font-size: 1.5rem;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+/* FAQ sections END */
+
+/* footer START */
+footer {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 300;
+    font-size: .89rem;
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#footer-links {
+    margin-top: 20px;
+}
+
+#footer-links ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#footer-links li {
+    padding: 10px;
+    min-width: 300px;
+}
+
+/* footer END */
+
+/* responsive */
+@media only screen and (max-width:1024px) {
+    .container {
+        width: 850px;
+    }
+
+}
