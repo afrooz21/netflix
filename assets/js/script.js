@@ -12,7 +12,7 @@ headerElements.forEach(header => {
     header.addEventListener('click', () => {
         
         // if the header has active class
-        // class close All items function
+        // calls close All items function
         if (header.parentElement.children[1].classList.contains("active")) {
             closeAllItems()
             header.parentElement.children[1].classList.remove("active")
@@ -20,7 +20,7 @@ headerElements.forEach(header => {
         }
 
         // if the header doesn't have active class
-        // class close All items function
+        // calls close All items function
         else {
             closeAllItems()
             header.parentElement.children[1].classList.add("active")
