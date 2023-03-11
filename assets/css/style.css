@@ -214,19 +214,26 @@ footer a {
 /* footer END */
 
 /* responsive */
+
 /* 1024 px */
 @media only screen and (max-width:1024px) {
+
+    /* container */
     .container {
         width: 850px;
     }
 
 }
 
+/* 768px */
 @media only screen and (max-width:768px) {
+
+    /* container */
     .container {
         width: 650px;
     }
 
+    /* sections h2 tag */
     section h2 {
         font-size: 2.5rem;
         font-weight: 900;
@@ -234,30 +241,91 @@ footer a {
 
 }
 
+/* 425px */
 @media only screen and (max-width:425px) {
+
+    /* container */
     .container {
         width: 100%
     }
 
+    /* sections h2 tag */
     section h2 {
         font-size: 1rem;
         font-weight: 900;
     }
 
+    /* accordion START */
     .accordion-body p,
     .accordion-header {
         font-size: 1rem;
     }
 
+    .accordion-header {
+        gap: 30px;
+    }
+
+    .header-icon {
+        font-size: 1rem;
+    }
+
+    #accordion-box {
+        width: 150%;
+    }
+
+    /* accordion END */
+
+    /* email address START */
+
     #email-address {
-        width: 250px;
+        width: 200px;
     }
 
     #email-input-box input {
         width: 250px;
     }
 
+    #email-input-box button {
+        padding: 15px 8px;
+        min-width: 90px;
+    }
+
     #email-address p {
         font-size: small;
+    }
+
+    /* email address END */
+
+    /* footer */
+    #footer-links li {
+        min-width: 100px;
+    }
+}
+
+/* 320px */
+@media only screen and (max-width:320px) {
+
+    /* accordion box START */
+    #accordion-box {
+        width: 150%;
+    }
+
+    #email-address {
+        width: 200px;
+    }
+
+    #email-input-box input {
+        width: 200px;
+    }
+
+    #email-address p {
+        font-size: small;
+    }
+
+    /* accordion box END */
+
+    /* header icon */
+    .header-icon {
+        font-size: 1rem;
     }
 }
