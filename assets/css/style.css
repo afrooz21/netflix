@@ -39,6 +39,11 @@ footer {
     border-bottom: 8px solid #2d2d2d;
     color: white;
     padding: 72px;
+
+}
+
+footer {
+    padding: 72px !important;
 }
 
 section h2 {
