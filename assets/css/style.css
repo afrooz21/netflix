@@ -46,9 +46,8 @@ section h2 {
     font-weight: 900;
 }
 
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=- */
 /* start of landing page */
-
-
 /* ad-banner top of the landing page */
 .ad-banner {
     background-color: #fff;
@@ -98,7 +97,7 @@ section h2 {
 }
 
 #landing-page {
-    background-image: url(/assets/images/landing-page-img/landingPage-bg.jpg);
+    background-image: url(../images/landing-page-img/landingPage-bg.jpg);
     background-size: cover;
     height: 100vh;
     box-shadow: inset 0px 0px 500px 100px #000000;
@@ -106,11 +105,6 @@ section h2 {
     border: none;
     position: relative;
 }
-
-
-
-
-
 
 
 /* start of top-nav */
@@ -226,8 +220,9 @@ section h2 {
     transform: rotate(-40deg);
     margin-bottom: 3px;
     display: inline-block;
-
 }
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+/* end of landing page */
 
 
 
