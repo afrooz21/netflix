@@ -20,7 +20,7 @@
 @font-face {
     font-family: netflix-sans;
     src: url(../fonts/netflix-sans/NetflixSans-Bold.otf);
-    /* font-weight: 900; */
+    font-weight: 900;
 }
 
 /* General Changes START */
@@ -221,6 +221,7 @@ section h2 {
     margin-bottom: 3px;
     display: inline-block;
 }
+
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 /* end of landing page */
 
