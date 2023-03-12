@@ -38,13 +38,205 @@ footer {
     border-top: 8px solid #2d2d2d;
     border-bottom: 8px solid #2d2d2d;
     color: white;
-    padding: 72px !important;
+    padding: 72px;
 }
 
 section h2 {
     font-size: 3rem;
     font-weight: 900;
 }
+
+/* start of landing page */
+
+
+/* ad-banner top of the landing page */
+.ad-banner {
+    background-color: #fff;
+    text-align: center;
+    margin-top: -7px;
+    height: 80px;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+}
+
+
+/* learn more > link */
+.ad-banner a {
+    text-decoration: none;
+    color: #0071eb;
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+.right-Arrow {
+    border: 1px solid #0071eb;
+    padding: 5px;
+    border-width: 0 3px 3px 0;
+    transform: rotate(-41deg);
+    margin-bottom: -2px;
+    display: inline-block;
+}
+
+/* new! btn */
+.ad-banner span:nth-child(1) {
+    background-color: #e50914;
+    padding: 3px 10px;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.ad-banner span:nth-child(3) {
+    font-weight: bold;
+    margin-left: 5px;
+    font-size: 25px;
+}
+
+#landing-page {
+    background-image: url(/assets/images/landing-page-img/landingPage-bg.jpg);
+    background-size: cover;
+    height: 100vh;
+    box-shadow: inset 0px 0px 500px 100px #000000;
+    padding: 0;
+    border: none;
+    position: relative;
+}
+
+
+
+
+
+
+
+/* start of top-nav */
+.top-nav {
+    display: flex;
+    margin-top: 20px;
+    width: 80%;
+    justify-content: space-between;
+    margin: 5% auto;
+    align-items: center;
+    /* background-color: azure; */
+}
+
+
+/* sing in and language btn */
+.top-nav .nav-btns {
+    display: flex;
+    justify-content: space-around;
+    /* background-color: #fff; */
+}
+
+.set-language {
+    padding: 10px 30px;
+    background-color: #000000b1;
+    border-radius: 5px;
+    border: 1px solid #707070;
+    margin-right: 5px;
+}
+
+/* netflix logo */
+.top-nav svg {
+    width: 100px;
+    fill: #e50914;
+}
+
+/* sing in btn */
+.top-nav button {
+    cursor: pointer;
+    background-color: #e50914;
+    color: #fff;
+    padding: 0px 30px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* set-language btn  */
+.set-language {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* language icon in btn  */
+.set-language img {
+    width: 25px;
+}
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* end of top-nav */
+
+/* start of header text */
+.header-text {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 15%;
+}
+
+.header-text h1 {
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.header-text span {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* =-=-=-=-=-=-=-=-=-=- */
+/* end of header text */
+
+.getStart-inputs {
+    width: 80%;
+    margin: 10% auto;
+    text-align: center;
+    /* background-color: #fff; */
+    display: flex;
+}
+
+.getStart-inputs input {
+    width: 50%;
+    height: 70px;
+    background-color: #000000a7;
+    border: 1px solid rgb(164, 164, 164);
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.getStart-inputs button {
+    width: 50%;
+    background-color: #e50914;
+    border: none;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.right-Arrow2 {
+    border: 1px solid #fff;
+    padding: 5px;
+    border-width: 0 3px 3px 0;
+    transform: rotate(-40deg);
+    margin-bottom: 3px;
+    display: inline-block;
+
+}
+
+
+
+
+
+
+
+
+
 
 /* General Changes END */
 
@@ -213,6 +405,7 @@ footer a {
 
 /* 768px */
 @media only screen and (max-width:768px) {
+
     /* sections h2 tag */
     section h2 {
         font-size: 2.5rem;
