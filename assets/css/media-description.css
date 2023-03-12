@@ -1,0 +1,131 @@
+/* general */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-image: url(/assets/images/cheat.jpg);
+    backdrop-filter: blur(200px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+
+/* main section */
+.container {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    width: 65%;
+}
+
+
+main {
+    background: linear-gradient(#161616 5.15%, #16161600 100%);
+    width: 100%;
+}
+
+#movie-details {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 20px 0 0;
+}
+
+#movie-details h1 {
+    font-size: 24px;
+}
+
+#movie-details>#title {
+    margin: 10px 0 0 0;
+}
+
+#release-info {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* movie description */
+#description {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background: #00000066;
+    border-radius: 8px;
+    height: fit-content;
+}
+
+#labels {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+#labels .label {
+    font-size: 13px;
+    border: 1px solid #e50914;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+
+#movie-description {
+    font-size: 14px;
+}
+
+#typography {
+    margin: 0;
+    font-size: 12px;
+    color: #ffffff99;
+}
+
+/* select and options */
+#country-selection {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+    border: none;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+#country-selection:hover {
+    background-color: #ffffff1a;
+}
+
+#country-selection * {
+    font-size: 13px;
+    background-color: #252323;
+    border-radius: 5px;
+}
+
+/* media queries */
+
+@media screen and (max-width:1350px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .container>img {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .container>img {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1300px) {
+    .container {
+        width: 1300px
+    }
+}
