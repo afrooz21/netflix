@@ -191,12 +191,21 @@ section h2 {
 /* end of header text */
 
 .getStart-inputs {
-    width: 80%;
+    width: 500px;
     margin: 10% auto;
     text-align: center;
     /* background-color: #fff; */
     display: flex;
 }
+
+/* if you dont no what the fuck is this lock at 193 */
+@media only screen and (max-width:600px) {
+
+    .getStart-inputs{
+        width: 80%;
+    }
+}
+
 
 .getStart-inputs input {
     width: 50%;
