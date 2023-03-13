@@ -243,7 +243,7 @@ section h2 {
 .watchOffline-img {
     position: relative;
 }
-
+/*  enjoyTv img section */
 .enjoyTv-img img {
     max-width: 600px;
 }
@@ -254,7 +254,7 @@ section h2 {
     left: 80px;
     z-index: -1;
 }
-
+/*  watchEverywhere video section */
 .watchEverywhere-vid video {
     max-width: 400px;
 }
@@ -266,6 +266,7 @@ section h2 {
     z-index: -1;
 }
 
+/*  download box div */
 .download-box {
     width: max-content;
     border: 2px solid #2f2f2f;
@@ -300,17 +301,16 @@ section h2 {
 }
 
 /* all paragraphs */
-.enjoyTv>div,
-.watchEverywhere>div,
-.kidProfile>div,
-.watchOffline>div {
+.enjoyTv > div,
+.watchEverywhere > div,
+.kidProfile > div,
+.watchOffline > div {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
     gap: 20px;
 }
-
 /* End of netflix option sections  */
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 
@@ -524,6 +524,75 @@ footer a {
     #email-input-box input {
         padding: 10px 25px;
     }
+
+
+    /* netflix option sections responsive */
+    .enjoyTv,
+    .watchEverywhere,
+    .kidProfile,
+    .watchOffline {
+        align-items: center;
+    }
+
+    .enjoyTv {
+        flex-direction: column;
+    }
+    .enjoyTv img {
+        width: 350px
+    }
+    .enjoyTv video {
+        width: 260px;
+    }
+    .enjoyTv-vid {
+        top: 50px;
+        left: 46px;
+    }
+
+    .watchEverywhere {
+        flex-direction: column-reverse;
+    }
+    .watchEverywhere img {
+        width: 350px;
+    }
+    .watchEverywhere video {
+        width: 220px;
+    }
+    .watchEverywhere-vid {
+        top: 30px;
+        left: 65px;
+    }
+
+    .kidProfile{
+        flex-direction: column;
+    }
+    .kidProfile img {
+        width: 350px;
+    }
+
+    .watchOffline {
+        flex-direction: column-reverse;
+    }
+    .watchOffline img {
+        width: 400px;
+    }
+
+    .download-box img {
+        width: 40px;
+    }
+    .download-box img:last-of-type {
+        width: 30px;
+        margin-left: 30px
+    }
+    .title-download-box span:first-of-type {
+        font-size: 12px;
+    }
+    .title-download-box span:last-of-type {
+        font-size: 10px;
+    }
+    .download-box {
+        left: 85px;
+        bottom: 15px;
+    }
 }
 
 /* 425px */
@@ -582,6 +651,23 @@ footer a {
     #footer-links li {
         min-width: 100px;
     }
+
+
+    /* netflix option sections responsive */
+    .enjoyTv {
+        flex-direction: column;
+    }
+    .enjoyTv img {
+        width: 300px
+    }
+    .enjoyTv video {
+        width: 240px;
+    }
+    .enjoyTv-vid {
+        top: 45px;
+        left: 40px;
+    }
+
 }
 
 /* 320px */
@@ -609,5 +695,33 @@ footer a {
     /* header icon */
     .header-icon {
         font-size: 1rem;
+    }
+
+
+    /* netflix option sections responsive */
+    .enjoyTv img {
+        width: 280px
+    }
+    .enjoyTv video {
+        width: 210px;
+    }
+    .enjoyTv-vid {
+        top: 44px;
+        left: 37px;
+    }
+
+    .watchEverywhere img {
+        width: 290px;
+    }
+    .watchEverywhere video {
+        width: 180px;
+    }
+    .watchEverywhere-vid {
+        top: 25px;
+        left: 55px;
+    }
+
+    .kidProfile img {
+        width: 290px;
     }
 }
