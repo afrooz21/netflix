@@ -438,12 +438,12 @@ section h2 {
 #email-input-box button {
     cursor: pointer;
     border: none;
-    padding: 15px 15px;
+    padding: 10px 30px;
     background-color: red;
     color: white;
     vertical-align: middle;
     border-radius: 5px;
-    width: 100%;
+    font-size: 1.5rem;
 }
 
 /* FAQ sections END */
@@ -488,7 +488,13 @@ footer a {
         font-size: 2.5rem;
         font-weight: 900;
     }
-
+    #email-input-box button {
+        padding: 10px 25px;
+        font-size: .8rem;
+    }
+    #email-input-box input {
+        padding: 10px 25px;
+    }
 }
 
 /* 425px */
@@ -528,11 +534,13 @@ footer a {
 
     #email-input-box input {
         width: 250px;
+        padding: 10px 25px;
     }
 
     #email-input-box button {
-        padding: 15px 8px;
-        min-width: 90px;
+        padding: 10px;
+        font-size: .8rem;
+        width: 100%;
     }
 
     #email-address p {
