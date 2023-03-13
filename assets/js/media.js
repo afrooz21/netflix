@@ -18,7 +18,4 @@ function dropDown(e) {
     }
 }
 
-// DropDown Menu for Regi
-
-
 
