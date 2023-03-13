@@ -104,7 +104,6 @@ section h2 {
 #landing-page {
     background-image: url(../images/landing-page-img/landingPage-bg.jpg);
     background-size: cover;
-    height: 100vh;
     box-shadow: inset 0px 0px 500px 100px #000000;
     padding: 0;
     border: none;
