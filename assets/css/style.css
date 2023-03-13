@@ -20,7 +20,7 @@
 @font-face {
     font-family: netflix-sans;
     src: url(../fonts/netflix-sans/NetflixSans-Bold.otf);
-    /* font-weight: 900; */
+    font-weight: 900;
 }
 
 /* General Changes START */
@@ -39,6 +39,11 @@ footer {
     border-bottom: 8px solid #2d2d2d;
     color: white;
     padding: 72px;
+
+}
+
+footer {
+    padding: 72px !important;
 }
 
 section h2 {
@@ -221,8 +226,21 @@ section h2 {
     margin-bottom: 3px;
     display: inline-block;
 }
+
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 /* end of landing page */
+
+
+/* سید اینجا سی اسس بزن  */
+/* =-=-=-=-=-=-=-=-=-==-=-=-=-=-=- */
+
+
+
+
+
+
+
+
 
 
 
