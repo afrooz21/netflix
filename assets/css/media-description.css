@@ -7,19 +7,19 @@
 body {
     margin: 0;
     min-height: 100vh;
-    background-image: url(/images/media/movie1.jpg);
+    background-image: url(../images/media/movie1.jpg);
     backdrop-filter: blur(200px);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
-    
+
 }
 
 
 /* header */
 
 header {
-    margin:0  20px 20px 20px;
+    margin: 0 20px 20px 20px;
     padding-top: 20px;
 }
 
@@ -104,22 +104,19 @@ header>div>div:nth-of-type(2)>a>img {
 
 
 header>div>div:nth-of-type(2)>span:nth-of-type(1)>div {
-    /* transition: all; */
     background-color: rgb(22, 22, 22);
-    /* display: none; */
-    /* margin-top: -200px; */
     position: absolute;
-    /* transition:1s all; */
     transform: translateY(-100%);
+    transition: 0.5s all;
     top: 0;
     left: 0;
     width: 100%;
 }
 
-header>div>div:nth-of-type(2)>span:nth-of-type(1):hover>div {
-    display: block;
+
+.active {
     left: 0;
-    transform: translateY(0px);
+    transform: translateY(0px) !important;
 }
 
 .div-top-hover-language {
@@ -127,14 +124,14 @@ header>div>div:nth-of-type(2)>span:nth-of-type(1):hover>div {
     height: 200px;
     background-color: rgba(35, 35, 35, 1);
     position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
 
 .div-top-hover-language>h1 {
     color: white;
     font-size: 20px;
-    position: absolute;
-    bottom: 0;
-    left: 38%;
 }
 
 .div-bottom-hover-language {
@@ -156,6 +153,17 @@ header>div>div:nth-of-type(2)>span:nth-of-type(1):hover>div {
 
 .div-bottom-hover-language>div>a:hover {
     background-color: rgba(255, 255, 255, 0.1);
+}
+
+#close-button {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 30px;
+    border: none;
 }
 
 /* main section */

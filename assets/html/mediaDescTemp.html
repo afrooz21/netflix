@@ -5,64 +5,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/media-description.css">
-    <link rel="icon" href="/images/icon.ico">
+    <!-- FontAwesome File (Offline version)-->
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
+    <!-- css link -->
+    <link rel="stylesheet" href="../css/media-description.css">
+    <!-- favicon -->
+    <link rel="icon" href="../images/icon.ico">
+    <!-- js link -->
+    <script defer src="../js/media-description.js"></script>
+    <!-- title -->
     <title>Netflix Media Center</title>
 </head>
 
 <body>
-    <header>
-        <div>
-            <div>
-                <div></div>
-                <span><a href="#">Media Center</a></span>
-            </div>
-            <div>
-                <span><a href="#">English <img src="/images/icon-felsh-down.svg" alt=""></a>
-                    <div>
-                        <div class="div-top-hover-language"><h1>What language do you speak?</h1></div>
-                        <div class="div-bottom-hover-language">
-                            <div>
-                                <a href=""><span>اللغة العربية</span></a>
-                                <a href=""><span>简体中文</span></a>
-                                <a href=""><span>繁體中文</span></a>
-                                <a href=""><span>English</span></a>
-                                <a href=""><span>Français</span></a>
-                                <a href=""><span>Deutsch</span></a>
-                                <a href=""><span>Ελληνικά</span></a>
 
-                            </div>
-                            <div>
-                                <a href=""><span>Bahasa Indonesia</span></a>
-                                <a href=""><span>Italiano</span></a>
-                                <a href=""><span>日本語</span></a>
-                                <a href=""><span>한국어</span></a>
-                                <a href=""><span>polski</span></a>
-                                <a href=""><span>Português (Brasil)</span></a>
-                                <a href=""><span>Português (Portugal)</span></a>
-
-                            </div>
-                            <div>
-                                <a href=""><span>română</span></a>
-                                <a href=""><span>Español (Latino)</span></a>
-                                <a href=""><span>Español (España)</span></a>
-                                <a href=""><span>ไทย</span></a>
-                                <a href=""><span>Türkçe</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </span>
-                <span><a href="#">🇩🇪 Germany <img src="/images/icon-felsh-down.svg" alt=""></a></span>
-                <span><a href="#">Newsrooms</a></span>
-                <span><a href="#">Resources <img src="/images/icon-felsh-down.svg" alt=""></a></span>
-                <span><a href="#">Apply</a></span>
-                <span><a href="#">Press Log In</a></span>
-                <a href="#"><img src="/images/icon-search.svg" alt=""></a>
-            </div>
-        </div>
-    </header>
     <!-- main section -->
     <main>
+        <header>
+            <div>
+                <div>
+                    <div></div>
+                    <span><a href="#">Media Center</a></span>
+                </div>
+                <div>
+                    <span id="drop-down"><a href="#">English<img src="../images/icon-felsh-down.svg" alt=""></a>
+                        <div id="drop-down-target">
+                            <div class="div-top-hover-language">
+                                <h1>What language do you speak?</h1>
+                                <i id="close-button" class="fa-solid fa-xmark"></i>
+                            </div>
+                            <div class="div-bottom-hover-language">
+                                <div>
+                                    <a href=""><span>اللغة العربية</span></a>
+                                    <a href=""><span>简体中文</span></a>
+                                    <a href=""><span>繁體中文</span></a>
+                                    <a href=""><span>English</span></a>
+                                    <a href=""><span>Français</span></a>
+                                    <a href=""><span>Deutsch</span></a>
+                                    <a href=""><span>Ελληνικά</span></a>
+
+                                </div>
+                                <div>
+                                    <a href=""><span>Bahasa Indonesia</span></a>
+                                    <a href=""><span>Italiano</span></a>
+                                    <a href=""><span>日本語</span></a>
+                                    <a href=""><span>한국어</span></a>
+                                    <a href=""><span>polski</span></a>
+                                    <a href=""><span>Português (Brasil)</span></a>
+                                    <a href=""><span>Português (Portugal)</span></a>
+
+                                </div>
+                                <div>
+                                    <a href=""><span>română</span></a>
+                                    <a href=""><span>Español (Latino)</span></a>
+                                    <a href=""><span>Español (España)</span></a>
+                                    <a href=""><span>ไทย</span></a>
+                                    <a href=""><span>Türkçe</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                    <span><a href="#">🇩🇪 Germany <img src="../images/icon-felsh-down.svg" alt=""></a></span>
+                    <span><a href="#">Newsrooms</a></span>
+                    <span><a href="#">Resources <img src="../images/icon-felsh-down.svg" alt=""></a></span>
+                    <span><a href="#">Apply</a></span>
+                    <span><a href="#">Press Log In</a></span>
+                    <a href="#"><img src="../images/icon-search.svg" alt=""></a>
+                </div>
+            </div>
+        </header>
         <!-- container -->
         <div class="container">
             <!-- first child (movie details) -->
@@ -109,12 +120,11 @@
 
             </div>
             <!-- second child (img) -->
-            <img src="/images/media/movie1.jpg" alt="">
+            <img src="../images/media/movie1.jpg" alt="">
         </div>
 
 
     </main>
-    <script src="series Info.js"></script>
 
 
 
