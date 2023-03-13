@@ -300,6 +300,18 @@ section h2 {
     max-width: 50px;
     margin-left: 50px
 }
+
+/* all paragraphs */
+.enjoyTv>div,
+.watchEverywhere>div,
+.kidProfile>div,
+.watchOffline>div{
+display:flex;
+justify-content:center;
+align-items:flex-start;
+flex-direction: column;
+gap: 20px;
+}
 /* End of netflix option sections  */
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 
