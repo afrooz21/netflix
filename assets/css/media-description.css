@@ -28,17 +28,21 @@ header a {
     color: rgba(255, 255, 255, 0.9);
 }
 
+/* div main header */
+
 header>div {
     display: flex;
     justify-content: space-between;
 }
+
+/* start header div left */
 
 header>div>div:nth-of-type(1) {
     display: flex;
     align-items: center;
 }
 
-/* header div left */
+/* div left header (logo) */
 
 header>div>div:nth-of-type(1)>div:nth-of-type(1) {
     background: url(../images/Netflix-Logo.svg);
@@ -49,19 +53,17 @@ header>div>div:nth-of-type(1)>div:nth-of-type(1) {
     display: inline-block;
 }
 
+/* div left header (span) */
+
 header>div>div:nth-of-type(1)>span {
     font-size: 15px;
     font-weight: 700;
     margin-left: 10px;
 }
 
-/* header div right */
+/* start header div right */
 
-header>div>div:nth-of-type(2)>span>a>img {
-    width: 10px;
-    height: 10px;
-    margin-left: 5px;
-}
+/* span top-list */
 
 header>div>div:nth-of-type(2)>span>a {
     padding: 8px 15px;
@@ -74,23 +76,33 @@ header>div>div:nth-of-type(2)>span>a {
     margin: 0 2px;
 }
 
-header>div>div:nth-of-type(2)>span>a:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    transition-duration: 0.5s;
+/* icons span top-list */
 
+header>div>div:nth-of-type(2)>span>a>img {
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
 }
+
+/* border span (Apply) header */
 
 header>div>div:nth-of-type(2)>span:nth-of-type(5)>a {
     border: solid 0.1px gray;
 }
 
+/* backgrund span (Press Log In) header */
+
 header>div>div:nth-of-type(2)>span:nth-of-type(6)>a {
     background-color: red;
 }
 
+/*hover backgrund span (Press Log In) header */
+
 header>div>div:nth-of-type(2)>span:nth-of-type(6)>a:hover {
     background-color: rgb(178, 7, 16);
 }
+
+/* icon search header */
 
 header>div>div:nth-of-type(2)>a>img {
     width: 20px;
@@ -100,8 +112,6 @@ header>div>div:nth-of-type(2)>a>img {
 }
 
 /* focus's header */
-
-
 
 header>div>div:nth-of-type(2)>span:nth-of-type(1)>div {
     background-color: rgb(22, 22, 22);
@@ -113,11 +123,16 @@ header>div>div:nth-of-type(2)>span:nth-of-type(1)>div {
     width: 100%;
 }
 
+/* active span language  */
 
 .active {
     left: 0;
     transform: translateY(0px) !important;
 }
+
+/* start hover span language header */
+
+/* div top */
 
 .div-top-hover-language {
     width: 100%;
@@ -129,10 +144,14 @@ header>div>div:nth-of-type(2)>span:nth-of-type(1)>div {
     justify-content: center;
 }
 
+/* h1 div top */
+
 .div-top-hover-language>h1 {
     color: white;
     font-size: 20px;
 }
+
+/* div bottom */
 
 .div-bottom-hover-language {
     display: flex !important;
@@ -141,19 +160,27 @@ header>div>div:nth-of-type(2)>span:nth-of-type(1)>div {
     align-items: flex-start;
 }
 
+/* div list-vertical a's */
+
 .div-bottom-hover-language>div {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
+/* a's hover soan language  */
+
 .div-bottom-hover-language>div>a {
     padding: 15px 200px 15px 30px;
 }
 
+/* hover a's hover soan language  */
+
 .div-bottom-hover-language>div>a:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
+
+/* icon close */
 
 #close-button {
     cursor: pointer;
