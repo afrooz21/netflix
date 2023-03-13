@@ -230,8 +230,46 @@ section h2 {
 /* end of landing page */
 
 
-/* سید اینجا سی اسس بزن  */
-/* =-=-=-=-=-=-=-=-=-==-=-=-=-=-=- */
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+/* Start of netflix option sections  */
+.enjoyTv,
+.watchEverywhere,
+.kidProfile,
+.watchOffline {
+    display: flex;
+}
+.enjoyTv-img,
+.watchEverywhere-img {
+    position: relative;
+}
+.enjoyTv-img img {
+    width: 600px;
+}
+.enjoyTv-vid {
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    z-index: -1;
+}
+
+.watchEverywhere-vid video {
+    width: 400px;
+}
+.watchEverywhere-vid {
+    position: absolute;
+    top: 50px;
+    left: 115px;
+    z-index: -1;
+}
+
+.download-box {
+    border: 2px solid #2f2f2f;
+}
+.download-box img {
+    width: 80px;
+}
+/* End of netflix option sections  */
+
 
 
 
