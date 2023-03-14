@@ -18,4 +18,12 @@ function dropDown(e) {
     }
 }
 
+// Start Header SearchBOx
 
+// Selectors
+let SearchBox = document.getElementById("search-box");
+let SearchIcon = document.getElementById("SearchIcon");
+// Onclick Function
+SearchIcon.onclick = function(){
+    SearchBox.classList.toggle("active")
+}
