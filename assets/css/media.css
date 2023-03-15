@@ -8,6 +8,8 @@ body {
   margin: 0;
   min-height: 100vh;
 }
+
+
 /* header */
 header {
   margin: -66px 20px 20px 20px;
@@ -18,16 +20,19 @@ header a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.9);
 }
-header > div {
+
+header>div {
   display: flex;
   justify-content: space-between;
 }
-header > div > div:nth-of-type(1) {
+
+header>div>div:nth-of-type(1) {
   display: flex;
   align-items: center;
 }
+
 /* header div left */
-header > div > div:nth-of-type(1) > div:nth-of-type(1) {
+header>div>div:nth-of-type(1)>div:nth-of-type(1) {
   background: url(../images/media/Netflix-Logo.svg);
   width: 113px;
   height: 30px;
@@ -35,21 +40,25 @@ header > div > div:nth-of-type(1) > div:nth-of-type(1) {
   background-repeat: no-repeat;
   display: inline-block;
 }
-header > div > div:nth-of-type(1) > span {
+
+header>div>div:nth-of-type(1)>span {
   font-size: 15px;
   font-weight: 700;
   margin-left: 10px;
 }
-header > div > div img {
+
+header>div>div img {
   width: 30px;
 }
+
 /* header div right */
-header > div > div:nth-of-type(2) > span > a > img {
+header>div>div:nth-of-type(2)>span>a>img {
   width: 10px;
   height: 10px;
   margin-left: 5px;
 }
-header > div > div:nth-of-type(2) > span > a {
+
+header>div>div:nth-of-type(2)>span>a {
   padding: 8px 15px;
   display: inline-block;
   font-size: 12px;
@@ -59,27 +68,33 @@ header > div > div:nth-of-type(2) > span > a {
   transition-duration: 0.5s;
   margin: 0 2px;
 }
-header > div > div:nth-of-type(2) > span > a:hover {
+
+header>div>div:nth-of-type(2)>span>a:hover {
   background-color: rgba(255, 255, 255, 0.1);
   transition-duration: 0.5s;
 }
-header > div > div:nth-of-type(2) > span:nth-of-type(5) > a {
+
+header>div>div:nth-of-type(2)>span:nth-of-type(5)>a {
   border: solid 0.1px gray;
 }
-header > div > div:nth-of-type(2) > span:nth-of-type(6) > a {
+
+header>div>div:nth-of-type(2)>span:nth-of-type(6)>a {
   background-color: red;
 }
-header > div > div:nth-of-type(2) > span:nth-of-type(6) > a:hover {
+
+header>div>div:nth-of-type(2)>span:nth-of-type(6)>a:hover {
   background-color: rgb(178, 7, 16);
 }
-header > div > div:nth-of-type(2) > a > img {
+
+header>div>div:nth-of-type(2)>a>img {
   width: 20px;
   padding: 10px;
   vertical-align: middle;
   box-sizing: content-box;
 }
+
 /* focus's header */
-header > div > div:nth-of-type(2) > span:nth-of-type(1) > div {
+header>div>div:nth-of-type(2)>span:nth-of-type(1)>div {
   background-color: rgb(22, 22, 22);
   position: absolute;
   transform: translateY(-100%);
@@ -88,10 +103,16 @@ header > div > div:nth-of-type(2) > span:nth-of-type(1) > div {
   left: 0;
   width: 100%;
 }
+
+.containerHeader2 {
+  display: none;
+}
+
 .active {
   left: 0;
   transform: translateY(0px) !important;
 }
+
 .div-top-hover-language {
   width: 100%;
   height: 200px;
@@ -101,27 +122,33 @@ header > div > div:nth-of-type(2) > span:nth-of-type(1) > div {
   align-items: flex-end;
   justify-content: center;
 }
-.div-top-hover-language > h1 {
+
+.div-top-hover-language>h1 {
   color: white;
   font-size: 20px;
 }
+
 .div-bottom-hover-language {
   display: flex !important;
   justify-content: center;
   flex-wrap: wrap;
   align-items: flex-start;
 }
-.div-bottom-hover-language > div {
+
+.div-bottom-hover-language>div {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-.div-bottom-hover-language > div > a {
+
+.div-bottom-hover-language>div>a {
   padding: 15px 200px 15px 30px;
 }
-.div-bottom-hover-language > div > a:hover {
+
+.div-bottom-hover-language>div>a:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
+
 #close-button {
   cursor: pointer;
   position: absolute;
@@ -141,7 +168,7 @@ header > div > div:nth-of-type(2) > span:nth-of-type(1) > div {
   border: none;
 }
 
-#intro-section > .middle-intro {
+#intro-section>.middle-intro {
   display: flex;
   flex-direction: column;
 }
@@ -161,9 +188,11 @@ header > div > div:nth-of-type(2) > span:nth-of-type(1) > div {
   border: none;
   color: #cbcbcb;
 }
+
 .intro-input input:focus {
   outline: none;
 }
+
 .intro-input {
   margin: 0px auto;
   border: 1px solid #9392926e;
@@ -174,18 +203,20 @@ header > div > div:nth-of-type(2) > span:nth-of-type(1) > div {
 /* Search input header */
 .search-input {
   display: inline-block;
-  position: absolute;
+  /* position: absolute;
   top: 8px;
-  right: 35px;
-  
+  right: 35px; */
+
 }
+
 /* Search Input box */
-#search-box{
+#search-box {
   border-radius: 55px;
   display: flex;
   align-items: center;
   padding-left: 8px;
 }
+
 /* Magnifier (search Icon) image */
 #SearchIcon {
   width: 50px;
@@ -193,6 +224,7 @@ header > div > div:nth-of-type(2) > span:nth-of-type(1) > div {
   padding: 8px 10px;
   background: transparent;
 }
+
 /* Search Input */
 .search-input input {
   font-size: 20px;
@@ -203,16 +235,17 @@ header > div > div:nth-of-type(2) > span:nth-of-type(1) > div {
   color: #f1f1f1;
   transition: .3s;
 }
+
 /* Giving style to active mode (after clicking) */
 .active input {
   width: 850px;
-  padding:10px 10px;
+  padding: 10px 10px;
   background: #212121;
-} 
+}
 
 .active #SearchIcon {
   background: #212121;
-} 
+}
 
 /* media */
 
@@ -221,27 +254,50 @@ header > div > div:nth-of-type(2) > span:nth-of-type(1) > div {
 }
 
 
-@media screen and (max-width:1000px ){
-  
-.unvisibleMenu {
-  display: none;
+@media screen and (max-width:1000px) {
+
+  .unvisibleMenu {
+    display: none;
+  }
+
+  .hamburgerMenu {
+    display: block;
+    width: 25px;
+    height: 25px;
+  }
+
+
+  .containerHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .netflixLogoo {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
-.hamburgerMenu {
-  display: block;
-  width: 25px;
-  height: 25px;
-}
+@media screen and (max-width:900px) {
 
-.containerHeader {
-  background-color: aquamarine;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-}
+  .containerHeader2 {
+    display: flex;
+    align-items: center;
+  }
 
-.netflixLogoo {
-  display: flex;
-  flex-direction: column;
-}
+  .containerHeader {
+    display: none;
+  }
+
+  #SearchIcon {
+    float: left;
+  }
+
+  #search-box {
+    width: 200%;
+    display: flex;
+    justify-content: space-between;
+  }
 }
