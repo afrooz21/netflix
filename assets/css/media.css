@@ -214,3 +214,34 @@ header > div > div:nth-of-type(2) > span:nth-of-type(1) > div {
   background: #212121;
 } 
 
+/* media */
+
+.hamburgerMenu {
+  display: none;
+}
+
+
+@media screen and (max-width:1000px ){
+  
+.unvisibleMenu {
+  display: none;
+}
+
+.hamburgerMenu {
+  display: block;
+  width: 25px;
+  height: 25px;
+}
+
+.containerHeader {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.netflixLogoo {
+  display: flex;
+  flex-direction: column;
+}
+}
