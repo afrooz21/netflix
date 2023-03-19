@@ -44,7 +44,7 @@ header>div>div:nth-of-type(1)>div:nth-of-type(1) {
 header>div>div:nth-of-type(1)>span {
   font-size: 15px;
   font-weight: 700;
-  margin-left: 10px;
+  /* margin-left: 10px; */
 }
 
 header>div>div img {
@@ -106,6 +106,15 @@ header>div>div:nth-of-type(2)>span:nth-of-type(1)>div {
 
 .containerHeader2 {
   display: none;
+  min-width: 200px;
+}
+
+/* netflix logo */
+.netflixLogoo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .active {
@@ -212,15 +221,6 @@ header>div>div:nth-of-type(2)>span:nth-of-type(1)>div {
   justify-content: space-around;
 }
 
-/* Search input header */
-.search-input {
-  display: inline-block;
-  /* position: absolute;
-  top: 8px;
-  right: 35px; */
-
-}
-
 /* Search Input box */
 #search-box {
   border-radius: 55px;
@@ -293,10 +293,6 @@ header>div>div:nth-of-type(2)>span:nth-of-type(1)>div {
     flex-direction: row;
   }
 
-  .netflixLogoo {
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 @media screen and (max-width:900px) {
@@ -308,6 +304,10 @@ header>div>div:nth-of-type(2)>span:nth-of-type(1)>div {
 
   .containerHeader {
     display: none;
+  }
+
+  .netflixLogoo {
+    flex-direction: column;
   }
 
   #search-box {
@@ -408,7 +408,7 @@ ul li:hover ul.dropdown {
 .line2-part2 {
   margin-top: 25px;
   display: flex;
-  width: 900px;
+  width: 100%;
 }
 
 .line2-part2>a {
@@ -416,8 +416,17 @@ ul li:hover ul.dropdown {
   color: white;
   background-color: #4e4e4e;
   border-radius: 5px;
-  padding: 10px 15px;
+  
+  padding: 15px 20px;
   margin: 10px 8px;
+
+  min-width: max-content;
+  min-height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
 }
 
 .line2-part2>a:hover {
@@ -448,7 +457,6 @@ ul li:hover ul.dropdown {
   margin: 20px;
   width: 220px;
   height: 336px;
-  margin: 15px;
 }
 
 .line3-part1>div {
