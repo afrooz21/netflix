@@ -120,6 +120,7 @@ header>div>div:nth-of-type(2)>span:nth-of-type(1)>div {
 .active {
   left: 0;
   transform: translateY(0px) !important;
+  z-index: 10;
 }
 
 .div-top-hover-language {
