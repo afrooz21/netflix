@@ -324,84 +324,100 @@ a {
 }
 
 /* shoro line2-part1 */
-.line2-part1{
+.line2-part1 {
   margin-top: 40px;
 }
+
 /*shoro css baray menu */
-ul{
+ul {
   list-style: none;
-  font-size:25px;
+  font-size: 25px;
   color: white;
   background-color: rgb(15, 15, 15);
 }
-ul li{
+
+ul li {
   color: white;
   display: inline-block;
   position: relative;
 }
+
 ul li a {
   display: block;
-  padding:8px 14px;
+  padding: 8px 14px;
   text-decoration: none;
-  color:white;
+  color: white;
   text-align: center;
-  font-size:25px; ;
-background-color: rgb(15, 15, 15);
+  font-size: 25px;
+  ;
+  background-color: rgb(15, 15, 15);
 }
+
 ul.dropdown {
   padding: 0;
   margin: 0;
- font-size: 16px;
+  font-size: 16px;
 }
+
 /* css baray menu option */
-.menu-option{
+.menu-option {
   text-align: center;
   padding: 8px 15px;
 }
 
-ul li ul.dropdown li{
+ul li ul.dropdown li {
   display: block;
 }
+
 ul li ul.dropdown {
-width: 100%;
+  width: 100%;
   display: block;
   position: absolute;
   z-index: 999;
   display: none;
 }
+
 /* css baray hover menu option */
-.menu-option:hover{
-  background-color:  #232323;
+.menu-option:hover {
+  background-color: #232323;
 }
+
 ul li a:hover {
   background-color: #232323;
 }
-ul li a:active{
+
+ul li a:active {
   background-color: #232323;
 }
+
 ul li:hover ul.dropdown {
   display: block;
 }
+
 /* payan css baray menu */
 
 
 /* start line2-part2 */
 .line2-part2 {
- margin-top: 25px ;
- display: flex;
+  margin-top: 25px;
+  display: flex;
+  width: 900px;
 }
+
 .line2-part2>a {
   font-size: 18px;
   color: white;
-  background-color:#4e4e4e;
-  border-radius: 5%;
+  background-color: #4e4e4e;
+  border-radius: 5px;
   padding: 10px 15px;
   margin: 10px 8px;
 }
-.line2-part2>a:hover{
-  background-color:#3f51b5;
-  
+
+.line2-part2>a:hover {
+  background-color: #3f51b5;
+
 }
+
 .line {
   border: 1px solid rgb(148, 147, 147);
 }
@@ -409,65 +425,86 @@ ul li:hover ul.dropdown {
 /* shoro line3 */
 
 /*shoro line3 part1 */
-.line1{
+.line1 {
   width: 70%;
 }
-.line3-part1{
+
+.line3-part1 {
   display: flex;
-justify-content:center;
-flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.line3-part1 >div{
+
+.line3-part1>div {
   border: 8%;
-  background-color:rgb(15, 15, 15);
+  background-color: rgb(15, 15, 15);
   margin: 20px;
   width: 220px;
   height: 336px;
   margin: 15px;
 }
 
-.line3-part1 >div > a > img {
+.line3-part1>div {
+  margin-bottom: 45px;
+}
+
+.line3-part1>div>a>img {
   width: 220px;
   height: 336px;
 }
-.line3-part1 >div > a > span{
+
+.line3-part1>div>a>span {
   text-decoration: none;
- padding: 10px 0px ;
+  padding: 10px 0px;
   color: white;
 }
+
 /* css baray hover div image ha */
-.line3-part1 >div:hover{
+.line3-part1>div:hover {
   transform: scale(1.05);
-  transition:0.5s all;
+  transition: 0.5s all;
 }
 
 /* payan line3 part1 */
 
 /* kod haye css baray line dokmey show more */
 /* more line */
-.more-line{
- display: flex;
- justify-content: center;
-flex-wrap: wrap;
+.more-line {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   height: 90px;
   background-color: rgb(15, 15, 15);
 }
-.more-line > div {
+
+.more-line>div {
   margin: 60px 0px;
 }
-.more-line > div >a {
+
+.more-line>div>a {
   box-sizing: inherit;
   color: rgb(255, 255, 255);
   font-size: 13px;
-  border: 1px solid  rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.4);
   padding: 10px 12px;
   background-color: rgb(15, 15, 15);
   border-radius: 4px;
 }
 
-.more-line > div >a:hover{
-background-color: #232323;
+.more-line>div>a:hover {
+  background-color: #232323;
 }
 
 /* payan line3 */
 /* end css for part 2 */
+
+
+/* Section1 Media Start................................................*/
+
+@media screen and (max-width:850px) {
+  .line2-part2 {
+    overflow-x: scroll;
+  }
+}
+
+/* Section1 Media Finish.................................................*/
