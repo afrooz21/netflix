@@ -230,22 +230,29 @@ header>div>div:nth-of-type(2)>span:nth-of-type(1)>div {
 }
 
 /* Magnifier (search Icon) image */
+
 #SearchIcon {
-  width: 50px;
+  width: 45px;
   cursor: pointer;
-  padding: 8px 10px;
   background: transparent;
+  padding: 11px 10px;
 }
 
 /* Search Input */
 .search-input input {
   font-size: 20px;
-  width: 0px;
+  width: 0;
   border: 0;
   background: transparent;
   outline: none;
   color: #f1f1f1;
   transition: .3s;
+}
+
+.search-input {
+  position: absolute;
+  right: 30px;
+  top: 7px;
 }
 
 /* Giving style to active mode (after clicking) */
